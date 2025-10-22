@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduRPG — Donde aprender es la mayor aventura</title>
+
+  <!-- Tipografías requeridas -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- NAVBAR (fija) -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <img src="images/logo.svg" alt="Logo EduRPG" class="logo-img">
+        <span class="brand-name">EduRPG</span>
+      </div>
+      <nav class="nav-right">
+        <a href="#inicio">Inicio</a>
+        <a href="#features">Características</a>
+        <a href="#cta">Comenzar</a>
+        <button class="btn btn-ghost open-login" type="button">Iniciar Sesión</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO con parallax y typewriter opcional -->
+  <main>
+    <section id="inicio" class="hero hero-parallax">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title" id="heroTitle">Donde aprender es la mayor aventura</h1>
+          <p class="hero-subtitle">Transforma tu clase en un mundo de misiones épicas, niveles y recompensas. La plataforma educativa que hace del aprendizaje una experiencia inolvidable.</p>
+          <div class="hero-actions">
+            <button id="ctaPrimary" class="btn btn-primary open-login">Comenzar Aventura</button>
+            <button id="ctaSecondary" class="btn btn-secondary open-login">Ver Demo</button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong class="stat-number">+10k</strong><span>Misiones creadas</span></div>
+            <div class="stat"><strong class="stat-number">+50k</strong><span>Alumnos activos</span></div>
+            <div class="stat"><strong class="stat-number">95%</strong><span>Satisfacción</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="floating-card card-teacher">
+            <span class="badge badge-profesor">PROFESOR</span>
+            <h3>Dashboard Profesor</h3>
+            <p class="muted">Control en tiempo real</p>
+            <div class="progress-bar"><div class="progress-bar-inner" style="width:70%"></div></div>
+          </div>
+
+          <div class="floating-card card-student">
+            <span class="badge badge-nivel">NIVEL 5</span>
+            <h3>Misión Activa</h3>
+            <p class="muted">+150 XP disponibles</p>
+            <div class="gems sparkle">💎 <span class="muted">x3</span></div>
+          </div>
+
+          <div class="floating-card card-game">
+            <span class="badge badge-logro">LOGRO</span>
+            <h3>Nivel 5 alcanzado!</h3>
+            <p class="muted">¡Sigue así!</p>
+            <div class="trophy">⭐</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FEATURES (3 tarjetas obligatorias con títulos exactos) -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Características Épicas</h2>
+        <div class="features-grid">
+          <article class="feature-card fade-in">
+            <div class="feature-icon">🎮</div>
+            <h3>Gamificación Completa</h3>
+            <p> Sistema de niveles, XP, insignias y recompensas para motivar el aprendizaje. </p>
+          </article>
+
+          <article class="feature-card fade-in">
+            <div class="feature-icon">📊</div>
+            <h3>Dashboard en Tiempo Real</h3>
+            <p>Visualiza progreso por alumno, estado de conexión y métricas en vivo.</p>
+          </article>
+
+          <article class="feature-card fade-in">
+            <div class="feature-icon">🧭</div>
+            <h3>Misiones Personalizadas</h3>
+            <p>Crea quizzes, tareas con fecha límite o actividades abiertas y subidas de archivos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section id="cta" class="cta">
+      <div class="container">
+        <h2>¿Listo para comenzar tu aventura?</h2>
+        <p>Únete a miles de educadores que ya transformaron sus clases con EduRPG</p>
+        <button id="finalCta" class="btn btn-primary btn-large open-login">Crear Cuenta Gratis</button>
+        <div class="cta-benefits">
+          <span class="pill">XP por entrega</span>
+          <span class="pill">Insignias</span>
+          <span class="pill">Panel en vivo</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="EduRPG Logo" class="footer-logo">
+        <span class="brand-name">EduRPG</span>
+      </div>
+      <div class="footer-links">
+        <a href="#privacy">Privacidad</a>
+        <a href="#terms">Términos</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 EduRPG — Donde aprender es la mayor aventura.</div>
+  </footer>
+
+  <!-- LOGIN MODAL (oculto por defecto) -->
+  <div id="loginModal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Cerrar" data-close>&times;</button>
+      <h3>Iniciar Sesión en EduRPG</h3>
+      <form id="loginForm" class="login-form" novalidate>
+        <label>
+          <span class="label">Correo electrónico</span>
+          <input type="email" name="email" required placeholder="tu@ejemplo.com">
+        </label>
+        <label>
+          <span class="label">Contraseña</span>
+          <input type="password" name="password" required placeholder="Contraseña">
+        </label>
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary">Acceder a la Aventura</button>
+          <button type="button" class="btn btn-secondary" data-close>Cancelar</button>
+        </div>
+      </form>
+      <p class="muted">¿Nuevo en EduRPG? <a href="#register">Crea una cuenta</a></p>
+    </div>
+  </div>
+
+  <script src="scripts/app.js" defer></script>
+  <script src="scripts/auth.js" defer></script>
+</body>
+</html>

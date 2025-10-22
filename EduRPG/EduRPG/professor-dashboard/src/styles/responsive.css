@@ -1,0 +1,51 @@
+@media (max-width: 1200px) {
+    /* Styles for desktop view */
+}
+
+@media (max-width: 768px) {
+    /* Styles for tablet view */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .cta {
+        text-align: center;
+    }
+
+    .feature-card {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for mobile view */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .modal-content {
+        padding: 1rem;
+    }
+}
